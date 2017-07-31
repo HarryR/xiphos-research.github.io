@@ -53,6 +53,13 @@
       e.preventDefault();
     });
 
+    $('#find-out-more').on('click', function (e) {
+      $('html, body').stop().animate({
+        scrollTop: $("#why-xiphos").offset().top+1
+      }, 850);
+      e.preventDefault();
+    });
+
     // Bind to scroll
     $(window).scroll(function(){
        // Get container scroll position

@@ -73,10 +73,6 @@ hr {
 	text-align: justify;
 }
 
-#contact-us {
-	background: #111;
-}
-
 .author {
 	padding: 15px;
 }
@@ -114,3 +110,11 @@ hr {
 .exploits .more:hover {
 	color: #fff;
 }
+
+
+.modal-close {
+	position: absolute;
+	top: 25px;
+	right: 0px;
+}
+

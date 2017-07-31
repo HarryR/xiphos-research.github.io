@@ -1,3 +1,9 @@
+---
+layout: none
+index: 'yes'
+follow: 'yes'
+---
+
 <!DOCTYPE html>
 <!--[if IE 8]>
 <html lang="en-US" class="no-js lt-ie9"> <![endif]-->
@@ -11,7 +17,10 @@
     <!-- Title -->
     <title>Xiphos Research</title>
 
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//media.licdn.com' />
 
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,700,700i" rel="stylesheet">
 
@@ -81,7 +90,7 @@
           </div><!-- .col -->
           
           <div class="col s12 m4 l6">
-            <a href="#why-xiphos" class="btn-large waves-effect waves-light teal lighten-1" style="margin-top: 45px;">Find Out More</a>
+            <a id="find-out-more" href="#why-xiphos" class="btn-large waves-effect waves-light teal lighten-1" style="margin-top: 45px;">Find Out More</a>
           </div><!-- .col -->
         </div><!-- .row -->
       </div><!-- .container -->
@@ -108,7 +117,7 @@
             <h5 class="center">Continuous Testing</h5>
 
             <p class="justify">
-              Normally you are required to pay for at least one security test per year to comply with regulations; while Xiphos can check your boxes, real hackers only need one foot-hold before you're fucked - regardless of regulations like GDPR, PCI or ISO.
+              Normally you are required to pay for at least one security test per year to comply with regulations; while Xiphos can check your boxes, real hackers only need one foot-hold - regardless of regulations like GDPR, PCI or ISO.
             </p>
           </div>
         </div>
@@ -159,14 +168,14 @@
 
         <div class="col s12 m6">
         	<div class="collection">
-        		<a class="collection-item modal-trigger" href="#modal-1">Web &amp; Mobile Applications</a>
-        		<a class="collection-item modal-trigger" href="#modal-2">Windows Networks</a>
-        		<a class="collection-item modal-trigger" href="#modal-3">Financial Software</a>
-        		<a class="collection-item modal-trigger" href="#modal-4">APIs and B2B services</a>
-        		<a class="collection-item modal-trigger" href="#modal-5">Network Appliances</a>
-        		<a class="collection-item modal-trigger" href="#modal-6">Internet of Things</a>
-        		<a class="collection-item modal-trigger" href="#modal-7">Blockchain Contracts</a>
-        		<a class="collection-item modal-trigger" href="#modal-8">Legacy Systems</a>
+        		<a class="collection-item modal-trigger" href="#modal-1">Application Security Testing</a>
+        		<a class="collection-item modal-trigger" href="#modal-2">Infrastructure Security Testing</a>
+        		<a class="collection-item modal-trigger" href="#modal-3">Source Code Review</a>
+        		<a class="collection-item modal-trigger" href="#modal-4">Wireless Security Testing</a>
+        		<a class="collection-item modal-trigger" href="#modal-5">Physical Security Testing</a>
+        		<a class="collection-item modal-trigger" href="#modal-6">Client-side Security Testing</a>
+        		<a class="collection-item modal-trigger" href="#modal-7">PCI-DSS Penetration Testing</a>
+        		<a class="collection-item modal-trigger" href="#modal-8">Training</a>
         	</div>
         </div>
       </div>
@@ -174,7 +183,8 @@
 
     <div id="modal-1" class="modal">
       <div class="modal-content">
-        <h4>Application Security Testing</h4>
+        <a href="#!" class="right modal-action modal-close waves-effect btn-flat">x</a>
+        <h5>Application Security Testing</h5>
 <p>The security (or otherwise) of enterprise applications has become an increasing concern over the last decade. Ensuring the
         security posture of external facing and internal applications has become a significant business focus. Many organisations claim
         to be able to deliver focused, outsourced assessment services, however Xiphos Research are unique in as much as traditionally
@@ -187,7 +197,7 @@
         
         <p>Our project approach is attuned individually to suit the unique needs and criteria of our clients. It can be loosely defined
         as following an assessment cycle that consists of the following distinct stages:
-        </p><ul>
+        </p><ul class="browser-default">
           <li>Information Gathering and Enumeration</li>
           <li>Vulnerability Identification</li>
           <li>Attack, Exploitation and Penetration</li>
@@ -209,8 +219,6 @@
         manual testing undertaken by experts. The security assessment activities undertaken by XRL are specifically designed to mirror the
         attacks and methodologies that would be employed by a knowledgeable and skilled remote attacker, and ensure that our clients are
         protected against people, and not just software. </p>
-        
-        <p>For additional information or assistance with our web application security assessment services, <a href="#contact-us">contact XRL</a> today.</p>
 
 
       </div>
@@ -218,8 +226,118 @@
 
     <div id="modal-2" class="modal">
       <div class="modal-content">
-        <h4>Internal Infrastructure Security Testing</h4>
-            <p>Typically penetration testing activities focus upon familiar assets (e.g. the external facing IP addresses associated with a
+        <a href="#!" class="right modal-action modal-close waves-effect btn-flat">x</a>
+        <h5>Infrastructure Security Testing</h5>
+            <p>Xiphos Research provides a range of specialist infrastructure security assessment services that can be performed either on an
+        individual ah-hoc basis, or as part of a holistic and comprehensive security review. Our service offerings are designed to assist
+        our clients in defining and defending against threats to system integrity and confidentiality, and safeguarding their digital
+        information assets. Our specialist service offerings include:
+        </p><ul class="browser-default">
+          <li><b>Workstation Assessment Services</b> - Designed to rapidly assess the security posture of large distributed
+          workstation environments, this service offering also discovers vulnerabilities in Operating System platforms,
+          network connectivity, and legacy system security services</li><br>
+          <li><b>IDS/IPS Assessment Services</b> - A defensive posture is only as strong as its weakest link. This service
+          evaluates both Intrusion Detection Systems and Intrusion Prevention Systems effectiveness at detecting and blocking
+          attack vectors as well as seeking to bypass security mechanisms in place</li><br>
+          <li><b>Firewall Assessment Services</b> - This service offering consists of a detailed study of perimeter firewalls,
+          and seeks to discover any potential vulnerabilities from both a host and policy perspective.</li><br>
+          <li><b>Database Security Assessment Services</b> - Database hosts are often correctly described the most vital assets
+          of an organisation. This offering evaluates the configuration and security of database environments, and assists
+          our clients in their protection</li>
+        </ul>
+        <p></p>
+        <p>Xiphos Research has proven consistently that our infrastructure Security testing services can be delivered rapidly and
+        consistently to a global customer base, fully addressing specific client needs and requirements.</p>    
+      </div>
+    </div>
+
+    <div id="modal-3" class="modal">
+      <div class="modal-content">
+        <a href="#!" class="right modal-action modal-close waves-effect btn-flat">x</a>
+        <h5>Source Code Review</h5>
+          <p>The analysis of source code from a security perspective has traditionally been an expensive and time consuming proposition
+        for many enterprises. Xiphos Research believes that secure code review services should be within reach for all enterprise
+        environments, without impacting unrealistically upon either the economic or time demands of modern business.</p>
+        
+        <p>The code review services we offer  provide a cost effective and rapid means to be assured of the security posture of
+        applications (whether developed in house or by third parties). Unlike some of our rivals we do not offer a service solely
+        dedicated to providing our clients with an 'overview' or other 'high level' understanding of the security or otherwise of
+        custom code bases, rather we believe in line analysis by our expert staff, can provide far more value than merely conducting
+        interviews with development staff, and reviewing documentation.</p>
+        
+        <p>The human analysis of source code by experienced professionals delivers best value to our clients. Although we will be
+        the first to admit that we deploy a variety of off the shelf and custom applications to assist in the code review process
+        (indeed, we are currently developing applications to assist developers in finding security deficits in their code) it is
+        our assertion that senior software engineers and security specialists manually reviewing code can help minimise a variety
+        of security threats, as well as optimising the code base. This is especially pertinent in the case of applications developed
+        in custom language sets, or legacy applications that may not be supported by automated code review tools.</p>
+        
+        <p>To adequately review enterprise level applications manually, and on a line by line basis within an acceptable time frames
+        and economic limitations is no easy proposition. To deliver best value to our diverse global client base, we have developed a
+        unique and proven three stage approach to conducting secure code reviews, namely:</p>
+        
+        <ul class="browser-default">
+          <li><b>Consultation</b> - During this phase of an engagement, we seek to leverage any information that may exist to
+          help identify any potential areas of critical security impact, as well as gathering a clear scope of what our client
+          acceptable levels of risk are, and what their project scope is</li><br>
+          <li><b>Mapping</b> - This stage of a project, allows our staff to gain a detailed understanding of the application
+          architecture, components and dependencies, as well as identifying areas of security related functionalities, and
+          potential areas of weaknesses.</li><br>
+          <li><b>Review</b> - Following an initial mapping of the application and supporting architectures, technical
+          specialists conduct a detailed review of the application source code using both manual techniques, as well as
+          proprietary code analysis tools to identify security weaknesses and logical flaws that may impact upon the
+          security and integrity of the application solution. </li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div id="modal-4" class="modal">
+      <div class="modal-content">
+        <a href="#!" class="right modal-action modal-close waves-effect btn-flat">x</a>
+        <h5>Wireless Security Testing</h5>
+          <p>Wireless networks are cheap and easy to deploy, and in recent years, wireless LANs have become part of many enterprise
+        environments and networks. The wireless security testing services offered by Xiphos Research can assist your enterprise in
+        understanding the risks that may be introduced by adopting wireless infrastructure and methods for managing and defending
+        against them.</p>
+        
+        <p>The wireless security testing services offered by Xiphos Research allow our clients to develop a range of strategies
+        for understanding and managing risks and vulnerabilities, increase market and customer confidence, adequately protect their
+        brand image and deliver viable and long term business success. Xiphos Research wireless testing services allow our client
+        base to assess and validate the strength, stability and integrity of wireless infrastructure by utilising our expert
+        penetration testing services. Our depth of knowledge includes wireless networking protocols such as wireless local area
+        networks (802.11), wireless wide area networks (GSM, UMTS, GPRS, etc.) and wireless personal area networks (Bluetooth).
+        In addition to assessing the security of the implemented wireless estate, the wireless testing services offered by Xiphos
+        Research allow our clients to rapidly determine any rogue Access Points in use within their estate.</p>
+      </div>
+    </div>
+
+    <div id="modal-5" class="modal">
+      <div class="modal-content">
+        <a href="#!" class="right modal-action modal-close waves-effect btn-flat">x</a>
+        <h5>Physical Security Testing</h5>
+          <p>Many security consulting providers are happy to solely focus upon technical risk. Although this doubtless is an essential
+        element in any organisation improving their security posture, at Xiphos Research we ardently believe that the physical security
+        of facilities and properties is a critical aspect of both business continuity planning and information security. Xiphos
+        Research address this requirement with a skilled and expert team that blend real world experience and expertise to focus upon
+        allowing our client base to develop effective physical security protections.</p>
+        
+        <p>During a physical security test, Xiphos consultants perform inspections of both facilities and operations. Unlike many of
+        our competitors that offer additional services (at extra cost) for covert assessment, this is included as standard as part of
+        the XRL physical security assessment process. In addition to conducting overt site inspections, policy reviews, and interviews
+        with key personnel to discover deviations from best practice and organisation security policy sets, Xiphos Research offer as
+        standard, covert inspection of premises and protection mechanisms. Our physical security assessment offering encompasses covert
+        techniques such as pretext entry, electronic signal sweeping, long range surveillance, security systems bypass, and other methods.
+        Simply put, we can be as overt or as covert as our clients require at one fixed cost price.</p>
+        
+      </div>
+    </div>
+
+    <div id="modal-6" class="modal">
+      <div class="modal-content">
+        <a href="#!" class="right modal-action modal-close waves-effect btn-flat">x</a>
+        <h5>Client-side Security Testing</h5>
+          <p>Typically penetration testing activities focus upon familiar assets (e.g. the external facing IP addresses associated with a
         client organisations, the DMZ, the firewall instances, etc.) however, XRL strongly believe that this approach fails to provide
         risk assurance and may be allowing organisations to falsely believe their security posture is greater than it in actuality is.
         Perimeter protections have becoming increasingly resilient, but internal defences are often still a pronounced security risk.</p>
@@ -232,49 +350,71 @@
         of client personnel via malicious emails / distribution of links, Xiphos Research are adept at the creation of targeted malware,
         and social engineering and data collection activities. In addition to testing the endpoint security of client systems and the
         identification of linked sensitive systems, we can also test the efficacy of protection mechanisms (such as AV and mail gateways)
-        that may be in place. Not only do the client side security assessment services that we offer by identify vulnerabilities within
+        that may be in place.</p>
+
+        <p>Not only do the client side security assessment services that we offer by identify vulnerabilities within
         endpoint client security and processes, but also within protection mechanisms and linked sensitive systems. In addition to purely
         technical attacks, we can at client request engage in focused social engineering attacks encompassing physical intrusion and
         telecommunications manipulation / interception.</p>
-        
-        <p>For additional information regarding the range of client side security testing services we offer and how they can be tuned to suit your needs, <a href="#contact-us">contact us</a>.</p>
-        
-      </div>
-    </div>
-
-    <div id="modal-3" class="modal">
-      <div class="modal-content">
-          Herpiderp
-      </div>
-    </div>
-
-    <div id="modal-4" class="modal">
-      <div class="modal-content">
-          Herpiderp
-      </div>
-    </div>
-
-    <div id="modal-5" class="modal">
-      <div class="modal-content">
-          Herpiderp
-      </div>
-    </div>
-
-    <div id="modal-6" class="modal">
-      <div class="modal-content">
-          Herpiderp
       </div>
     </div>
 
     <div id="modal-7" class="modal">
       <div class="modal-content">
-          Herpiderp
+      <a href="#!" class="right modal-action modal-close waves-effect btn-flat">x</a>
+        <h5>PCI-DSS Penetration Testing</h5>
+          <p>The requirements mandated by the Data Security Standard (DSS) as issued by the PCI council clearly state that penetration
+        testing activities must be conducted regularly by any organisation processing or storing credit card data. Xiphos Research
+        works closely with a number of reputable QSA companies to facilitate technical penetration testing activities that encompass
+        multiple layer attack scenarios. Many penetration testing providers approach a PCI mandated penetration testing engagement
+        in much the same manner as any other engagement, XRL believe however that the core focus of such testing should always be
+        concerned with the security (or otherwise) of any card holder data stored or processed by the commissioning client.</p>
+        
+        <p>The penetration testing services provided by Xiphos Research on behalf of our clients encompass both automated and manual
+        testing strategies and approaches. Many of our competitors are happy to provide a low skilled junior operating an automated
+        tool as the basis of their PCI testing regimens. We believe that this approach is fundamentally flawed. Not only does it fail
+        to provide best value to the customer, but in many situations can fail to accurately identify, exploit, and quantify risk.</p>
+        
+        <p>As part of any ROC (Report on Compliance) we believe that an organisation, or the QSA acting on its behalf, are fully
+        appraised of and aware of any technical weaknesses that may impact upon the security of their networks, applications,
+        processes, and indeed, card holder data. For this reason, the PCI penetration testing services performed by Xiphos
+        Research are always enacted by skilled and experienced professionals whose motivator is to substantiate, demonstrate, and
+        if necessary, replicate the attack vectors included in any reporting documentation produced as part of an engagement. We do
+        not provide sweeping and unproven technical recommendations as part of the reporting cycle, but rather seek to identify
+        (and if possible) exploit vulnerabilities that can then be documented, understood, and addressed as part of the compliance
+        process.</p>
+        
+        <p>We work closely with a number of reputable international QSA companies and merchant client to provide technical testing
+        and assessment services. Our specialist, goal focused, penetration testing services have helped some of the largest
+        merchant groups in Europe gain compliance with PCI requirements, and truly identify and resolve risks, that automated
+        scanners alone would not have identified.</p>
       </div>
     </div>
 
     <div id="modal-8" class="modal">
       <div class="modal-content">
-          Herpiderp
+          <a href="#!" class="right modal-action modal-close waves-effect btn-flat">x</a>
+          <h5>Training</h5>
+          <p>Organisational approaches to, and concerns about security differ from client to client, sector to sector. Xiphos Research
+        provides training services to suit the specific needs of our client base. We provide training and knowledge transfer services
+        that encompass both general courses for IT staff on how to counteract current security attack vectors (as well as audit their
+        own environments) to highly specialised knowledge transfer to security specialists (including other security consulting companies).</p>
+        
+        <p>The training services offered by Xiphos, are all designed with the student in mind, and with organisational needs at the
+        forefront. Training can be delivered either on client premises, or from a variety of secure training locations throughout the globe.</p>
+        
+        <p>Xiphos Research deliver both specialist (and individually created) knowledge transfer sessions, as well as general security
+        training courses. Examples of current training courses include:
+        </p><ul class="browser-default">
+          <li>Database Security (Oracle and MS-SQL)</li>
+          <li>Web Application Security</li>
+          <li>Behind Enemy Lines</li>
+          <li>Secure Coding (multiple languages)</li>
+          
+        </ul>
+        <p></p>
+        <p>Additionally, we are currently composing a 2 day seminar concerning with security testing practice in accordance with
+        external standards (e.g. PCI DSS).</p>
       </div>
     </div>
   </div><!-- .container -->
@@ -283,11 +423,11 @@
   <div class="container">
 		<div class="section">
 	  		<div class="row">
-	  			<div class="col s12 m6">
+	  			<div class="col s12 l6">
 	  				 <img src="img/hm-roadmap.png" style="width: 95%; max-width: 400px; display: block; margin: 0 auto;" />
 	  			</div>
 
-	  			<div class="col s12 m6 l6">
+	  			<div class="col s12 l6">
 	  				<h4 class="center">Assessment Process</h4>
 	  				<p>
 	  				To that end, Xiphos offer continuous penetration testing to our clients. For a fixed fee, Xiphos offer a mechanism where internal and external testing can be performed on an ad-hoc and as needed basis. This allows our clients to rapidly identify critical vulnerabilities that exist within their technology stacks without the delays that may be caused by traditional penetration testing cycles. </p>
@@ -324,9 +464,9 @@
 
         <div class="col s12 m6">
           <div class="icon-block">
-            <h5 class="center">IT Departments</h5>
+            <h5 class="center">Legal Services</h5>
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+            <p class="light">The <a href="https://panamapapers.icij.org/">Panama Papers</a> data leak in 2015 highlights the importance of a robust security programme to protect your brand, reputation and clients. Xiphos Research has bespoke solutions to mitigate internal and external data-leaks in addition to hacking attacks and malware, we take client confidentiality seriously and focus on real risks.</p>
           </div>
         </div>
       </div>
@@ -344,7 +484,7 @@
             <div class="icon-block">
               <h5 class="center">Financial Technology</h5>
 
-              <p class="light">Smart-contract and blockchains are the tip of the iceberg, many companies don't spend the same level of attention to the rest of their infrastructure. You can't rely on the security of a big multinational bank, because with cryptocurrencies you are your own bank.</p>
+              <p class="light">Knowing the security of your smart-contract and blockchains is a good first step, but ultimately they are the tip of an iceberg; many companies don't spend the same level of attention to the rest of their infrastructure and policies, often leaving them exposed in unknown ways until the worst happens.</p>
             </div>
           </div>
         </div>
@@ -360,33 +500,20 @@
           <div class="col m6 s12">
             <h4 class="header center">
               <br />
-              Research
+              Research &amp; News
             </h4>
             
             <div class="exploits">
-              <a class="exploit" target="_blank" href="https://www.linkedin.com/pulse/deployment-failures-information-leakage-high-profile-websites-kelso">
-                <b>Deployment Failures and Information Leakage on High Profile Websites</b>
-              </a>
-
-              <a class="exploit" target="_blank" href="https://www.linkedin.com/pulse/2016-year-michael-kemp">
-                <b>2016: That Was the Year that Was</b>
-              </a>
-
-              <a class="exploit" target="_blank" href="https://www.linkedin.com/pulse/tr-064-when-shoddy-implementations-come-back-haunt-you-darren-martyn">
-                <b>TR-064: When Shoddy Implementations Come Back to Haunt You.</b>
-              </a>
-
-              <a class="exploit" target="_blank" href="https://www.linkedin.com/pulse/zoho-managing-bullet-gavin-kelso">
-                <b>Zoho: Managing a Bullet</b>
-              </a>
-
-              <a class="exploit" target="_blank" href="https://www.linkedin.com/pulse/lifesize-im-looking-through-you-gavin-kelso">
-                <b>LifeSize: I’m Looking Through You</b>
-              </a>
-
-              <a class="exploit" target="_blank" href="https://www.linkedin.com/pulse/deep-below-gavin-kelso">
-                <b>In the deep below</b>
-              </a>
+              {% for post in site.posts %}
+                {% if post.layout == 'news' or post.layout == "page" %}
+                  <a class="exploit" target="_blank" href="{% if post.link %}{{ post.link }}{% else %}{{ post.url }}{% endif %}">
+                    <b>{{ post.title }}</b>
+                    {% if post.excerpt %}
+                      <p>{{ post.excerpt }}</p>
+                    {% endif %}
+                  </a>
+                {% endif %}
+              {% endfor %}
 
               <a class="more" target="_blank" href="https://www.linkedin.com/company/xiphos-research">View More on LinkedIn &#9658;</a>
             </div><!-- .exploits -->
@@ -442,7 +569,7 @@
     <div class="parallax" style="background: #000;"><img src="img/fotolia_97908871.jpg" style="opacity: 0.05;" alt="Unsplashed background img 3"></div>
   </div><!-- .parallax-container -->
 
-  <section class="container">
+  <section class="container" id="contact-us">
     <br />
     <div class="row">
       <div class="col m6 s12 center">
@@ -450,8 +577,6 @@
 
         <p>E-mail <a href="mailto:sales@xiphosresearch.co.uk">sales@xiphosresearch.co.uk</a></p>
         <p>Phone <a href="tel:+441212332479">+44 (0)121 233 2479</a></p>
-
-        
 
 	      <p style="font-size: 80%;">
         	Xiphos Research Ltd. is a private limited company<br />
@@ -469,7 +594,7 @@
           B18 6DS<br />
         </p>
       </div><!-- .col -->
-    </div><!-- .row -->
+    </div><!-- .row -->    
 
     <div class="row center">
       <div class="author" style="display: inline-block;">

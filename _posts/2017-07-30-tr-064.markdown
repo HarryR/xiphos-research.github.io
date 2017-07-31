@@ -1,0 +1,6 @@
+---
+layout: news
+title:  "TR-064: When Shoddy Implementations Come Back to Haunt You."
+link:   https://www.linkedin.com/pulse/tr-064-when-shoddy-implementations-come-back-haunt-you-darren-martyn
+date:   2017-07-30 00:00:00
+---
