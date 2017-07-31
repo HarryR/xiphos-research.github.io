@@ -68,3 +68,49 @@ hr {
 #nav-mobile li.active a {
 	color: #000 !important;
 }
+
+.justify {
+	text-align: justify;
+}
+
+#contact-us {
+	background: #111;
+}
+
+.author {
+	padding: 15px;
+}
+
+.exploit {
+	display: block;
+	color: #fff;
+	border-bottom: 1px solid #222;
+	padding: 10px;
+}
+
+.exploit:hover {
+	background: #222;
+}
+
+.exploit p, .exploit b {
+	display: block;
+	padding: 0;
+	margin: 0;
+	line-height: 1.3em;
+}
+
+.exploit p {
+	margin-top: 5px;
+}
+
+.exploits .more {
+	color: #aaa;
+	text-align: center;
+	padding: 20px;
+	display: block;
+	font-weight: bold;
+}
+
+.exploits .more:hover {
+	color: #fff;
+}
