@@ -118,3 +118,39 @@ hr {
 	right: 0px;
 }
 
+.top-logo {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -25px;
+}
+
+.page-header {
+	padding-right: 140px;
+}
+
+@media only screen and (max-width: 600px) {
+	.page-header {
+		padding-right: 50px;
+	}
+}
+
+blockquote {
+	border-color: #ddd;
+}
+
+section.content {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.news-item {
+	color: #000;
+	display: block;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.news-item:hover {
+	background: #eee;
+}

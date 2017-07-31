@@ -508,14 +508,14 @@ follow: 'yes'
                 {% if post.layout == 'news' or post.layout == "page" %}
                   <a class="exploit" target="_blank" href="{% if post.link %}{{ post.link }}{% else %}{{ post.url }}{% endif %}">
                     <b>{{ post.title }}</b>
-                    {% if post.excerpt %}
-                      <p>{{ post.excerpt }}</p>
+                    {% if post.excerpt | strip %}
+                      <p>{{ post.content | strip_html | truncatewords:20, "..." }}</p>
                     {% endif %}
                   </a>
                 {% endif %}
               {% endfor %}
 
-              <a class="more" target="_blank" href="https://www.linkedin.com/company/xiphos-research">View More on LinkedIn &#9658;</a>
+              <a class="more" target="_blank" href="news.html">View More &#9658;</a>
             </div><!-- .exploits -->
 
           </div><!-- .col -->

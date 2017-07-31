@@ -28,22 +28,25 @@
 
 <header style="background: #111; padding-bottom: 20px; padding-top: 10px;">
   <div class="container">
-    <section style="padding-right: 20px; padding-left: 20px;">
+    <section class="page-header" style="padding-left: 20px; position: relative;">
+      <div class="top-logo">
+        <a id="logo-container" href="/">
+          <img class="right" src="/img/logo-white.png" height="40" style="margin-top: 10px;" />
+        </a>
+        <div class="hide-on-small-only right white-text" style="text-align: right; margin-right: 10px; margin-top: 15px; line-height: 1.2rem">
+          XIPHOS<br />
+          RESEARCH
+        </div>
+      </div><!-- .right -->
       <div class="left white-text">
         <h4 style="margin-bottom: 0;">{{ page.title }}</h4>
-      </div>
-      <a id="logo-container" href="#">
-        <img class="right" src="/img/logo-white.png" height="40" style="margin-top: 10px;" />
-      </a>
-      <div class="hide-on-small-only right white-text" style="text-align: right; margin-right: 10px; margin-top: 15px; line-height: 1.2rem">
-        XIPHOS<br />
-        RESEARCH
       </div>
       <div class="clearfix"></div>
     </section>
   </div>
 </header>
 
+{% if page.date %}
 <div class="container" style="background: #eee; padding: 10px; padding-left: 20px; padding-right: 20px;">
   <div class="right">
     <a href="/">Return &#9658;</a>
@@ -53,9 +56,10 @@
 {{ page.date | date: "%B" }},
 {{ page.date | date: "%Y" }}
 </div> 
+{% endif %}
 
 <div class="container">
-  <section>
+  <section class="content">
 
     {{ content }}
 
