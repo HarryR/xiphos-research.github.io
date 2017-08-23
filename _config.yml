@@ -1,9 +1,9 @@
-title: Logicista
-domain: www.logicista.com
+title: Xiphos Research
+domain: www.xiphosresearch.com
 markdown: redcarpet
 highlighter: rogue
 # pygments: true
-author: Harry Roberts
+author: Xiphos Research
 excerpt_separator: "\n"
 permalink: /:year/:title
 exclude: [Makefile]

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="1024" height="600" style="border:1px solid #c3c3c3;">
+	Your browser does not support the canvas element.
+</canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+
+var width = canvas.width;
+var height = canvas.height;
+
+var hbar_count = 100;
+var hbar_width = Math.floor(width / hbar_count);
+
+var vbar_count = 100;
+var vbar_width = Math.floor(height / vbar_count);
+
+function redraw ()
+{	
+	var now = (new Date()).getTime() / 1000.0;
+
+	ctx.fillStyle = '#000'
+	ctx.fillRect(0, 0, width, height);
+
+	for( var X = 0; X < hbar_count; X++ )
+	{
+		for( var Y = 0; Y < vbar_count; Y++ )
+		{
+			var offs_X = X * hbar_width;
+			var offs_Y = Y * vbar_width;
+			var end_X = offs_X + hbar_width;
+			var end_Y = offs_Y + vbar_width;
+
+			var white = "rgba(255,255,255,";
+
+			var pct_X = offs_X / width;
+			var pct_Y = offs_Y / height;
+
+			var pos_X = Math.sin(Math.PI * 6 * pct_X * 0.05);
+			var pos_Y = Math.sin(Math.PI * 6 * pct_Y + now * 0.5);
+
+			var A = Math.abs(Math.cos(pos_Y * pos_X)) > 0.5 ? 1 : 0;
+			var B = Math.abs(Math.sin(pos_X + pos_Y)) > 0.5 ? 1 : 0;
+			//var B = 1;//var B = Math.abs(pos_X + pos_Y) > 0.5 ? 1 : 0;
+			var C = 1; //Math.abs(Math.sin(pct_X - now) * Math.cos(pct_Y + now)) > 0.5 ? 1 : 0;
+			var D = 1; //Math.abs(Math.cos(pct_Y + now) - Math.sin(pct_X + now)) > 0.5 ? 1 : 0;
+			var E = Math.abs(Math.cos(pct_Y) * Math.sin(pct_X)) > 0.01 ? 1 : 0;
+			var F = Math.abs(Math.sin(pct_Y) * Math.cos(pct_X)) > 0.01 ? 1 : 0;
+			
+			var intensity = A & B & C & D & E & F;
+			if( X % 2 ) {
+				intensity = 1 - intensity;
+			}
+			
+
+			//intensity = Math.floor(intensity * 2) * 0.5;
+			intensity *= 0.2;
+			ctx.fillStyle = white + intensity + ')';
+			ctx.fillRect(offs_X, offs_Y, hbar_width, vbar_width);
+		}
+	}
+
+	setTimeout(redraw, 0.2);
+}
+
+setTimeout(redraw, 0.2);
+
+
+</script>
+
+</body>
+</html>
+

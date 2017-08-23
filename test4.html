@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="1024" height="600" style="border:1px solid #c3c3c3;">
+	Your browser does not support the canvas element.
+</canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+
+var width = canvas.width;
+var height = canvas.height;
+
+var hbar_count = 100;
+var hbar_width = Math.floor(width / hbar_count);
+
+var vbar_count = 100;
+var vbar_width = Math.floor(height / vbar_count);
+
+function redraw ()
+{	
+	var now = (new Date()).getTime() / 1000.0;
+
+	ctx.fillStyle = '#000'
+	ctx.fillRect(0, 0, width, height);
+
+	for( var X = 0; X < hbar_count; X++ )
+	{
+		for( var Y = 0; Y < vbar_count; Y++ )
+		{
+			var offs_X = X * hbar_width;
+			var offs_Y = Y * vbar_width;
+			var end_X = offs_X + hbar_width;
+			var end_Y = offs_Y + vbar_width;
+
+			var white = "rgba(255,255,255,";
+
+			var pct_X = offs_X / width;
+			var pct_Y = offs_Y / height;
+
+			var pos_X = Math.sin(pct_X);
+			var pos_Y = Math.sin(pct_Y);
+
+			// Base pattern - shimmering
+			var intensity = Math.abs(Math.sin(now + pos_Y));
+			intensity *= ( 1 - Math.abs(Math.sin(X + now)) );
+			//intensity = Math.floor(intensity * ( 1 + Math.abs(Math.sin(X)) ));
+			intensity *= 0.1;
+
+			A = (1 + Math.sin(100 / pos_Y + now)) / 2 > 0.5 ? 1 : 0;
+			if( A ) {
+				intensity = A * intensity;
+			}
+
+			//intensity += A * 0.5;
+
+			// Draw pattern
+			ctx.fillStyle = white + intensity + ')';
+			ctx.fillRect(offs_X, offs_Y, hbar_width, vbar_width);
+		}
+	}
+
+	setTimeout(redraw, 0.2);
+}
+
+setTimeout(redraw, 0.2);
+
+
+</script>
+
+</body>
+</html>
+
